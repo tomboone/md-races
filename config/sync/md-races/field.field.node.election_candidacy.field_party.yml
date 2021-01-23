@@ -1,0 +1,21 @@
+uuid: 0679c4b1-8cb5-4322-9bae-e3facbd80f0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_party
+    - node.type.election_candidacy
+  module:
+    - options
+id: node.election_candidacy.field_party
+field_name: field_party
+entity_type: node
+bundle: election_candidacy
+label: Party
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

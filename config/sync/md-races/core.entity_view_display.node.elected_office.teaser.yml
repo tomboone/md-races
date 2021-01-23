@@ -1,0 +1,22 @@
+uuid: c206e75e-6784-4b59-976c-c99c6d4bd1c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.elected_office.field_elected_body
+    - node.type.elected_office
+  module:
+    - user
+id: node.elected_office.teaser
+targetEntityType: node
+bundle: elected_office
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_elected_body: true

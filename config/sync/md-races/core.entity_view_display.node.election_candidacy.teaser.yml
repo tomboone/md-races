@@ -1,0 +1,26 @@
+uuid: 2d25063a-db8b-4ccb-af41-5f401fa81cc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.election_candidacy.field_candidate
+    - field.field.node.election_candidacy.field_election_race
+    - field.field.node.election_candidacy.field_party
+    - node.type.election_candidacy
+  module:
+    - user
+id: node.election_candidacy.teaser
+targetEntityType: node
+bundle: election_candidacy
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_candidate: true
+  field_election_race: true
+  field_party: true

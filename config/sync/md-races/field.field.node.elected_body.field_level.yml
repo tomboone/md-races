@@ -1,0 +1,21 @@
+uuid: 768b16f3-3071-4761-ac37-a971988e7a6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_level
+    - node.type.elected_body
+  module:
+    - options
+id: node.elected_body.field_level
+field_name: field_level
+entity_type: node
+bundle: elected_body
+label: Level
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

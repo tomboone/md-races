@@ -1,0 +1,29 @@
+uuid: 7df19738-73af-4717-8162-5c2e8d787e95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_election_race
+    - node.type.election_candidacy
+    - node.type.election_race
+id: node.election_candidacy.field_election_race
+field_name: field_election_race
+entity_type: node
+bundle: election_candidacy
+label: 'Election Race'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      election_race: election_race
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

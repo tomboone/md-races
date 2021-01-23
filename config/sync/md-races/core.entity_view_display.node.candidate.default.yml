@@ -1,0 +1,46 @@
+uuid: e1884a4e-4d8f-4cea-9d0e-c033d9c36419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.candidate.field_first_name
+    - field.field.node.candidate.field_last_name
+    - field.field.node.candidate.field_middle_name_initial
+    - node.type.candidate
+  module:
+    - user
+id: node.candidate.default
+targetEntityType: node
+bundle: candidate
+mode: default
+content:
+  field_first_name:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_last_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_middle_name_initial:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

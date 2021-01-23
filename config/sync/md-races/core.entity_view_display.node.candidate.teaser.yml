@@ -1,0 +1,26 @@
+uuid: a6e0296d-90dd-4f36-a19b-e5a52abdb9e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.candidate.field_first_name
+    - field.field.node.candidate.field_last_name
+    - field.field.node.candidate.field_middle_name_initial
+    - node.type.candidate
+  module:
+    - user
+id: node.candidate.teaser
+targetEntityType: node
+bundle: candidate
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_first_name: true
+  field_last_name: true
+  field_middle_name_initial: true

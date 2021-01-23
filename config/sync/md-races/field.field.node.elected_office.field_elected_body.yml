@@ -1,0 +1,29 @@
+uuid: 28fc0f2f-40bb-4356-96f3-81c356d2e453
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elected_body
+    - node.type.elected_body
+    - node.type.elected_office
+id: node.elected_office.field_elected_body
+field_name: field_elected_body
+entity_type: node
+bundle: elected_office
+label: 'Elected Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      elected_body: elected_body
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

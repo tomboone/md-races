@@ -1,0 +1,29 @@
+uuid: 405741ad-4c1b-4263-838d-e375879cdff0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_elected_office
+    - node.type.elected_office
+    - node.type.election_race
+id: node.election_race.field_elected_office
+field_name: field_elected_office
+entity_type: node
+bundle: election_race
+label: 'Elected Office'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      elected_office: elected_office
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

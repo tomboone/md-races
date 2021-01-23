@@ -1,0 +1,19 @@
+uuid: 51fe22e3-eb50-4554-97a2-c67d2450fee4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_middle_name_initial
+    - node.type.candidate
+id: node.candidate.field_middle_name_initial
+field_name: field_middle_name_initial
+entity_type: node
+bundle: candidate
+label: 'Middle Name/Initial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

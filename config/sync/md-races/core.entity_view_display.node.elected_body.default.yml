@@ -1,0 +1,28 @@
+uuid: d818c046-cbe9-4f05-8914-85023d8ad99d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.elected_body.field_level
+    - node.type.elected_body
+  module:
+    - options
+    - user
+id: node.elected_body.default
+targetEntityType: node
+bundle: elected_body
+mode: default
+content:
+  field_level:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

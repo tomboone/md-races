@@ -1,0 +1,21 @@
+uuid: 36995b86-4081-4d11-8ff8-c4f6e3caadbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_election_date
+    - node.type.election_race
+  module:
+    - datetime
+id: node.election_race.field_election_date
+field_name: field_election_date
+entity_type: node
+bundle: election_race
+label: 'Election Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

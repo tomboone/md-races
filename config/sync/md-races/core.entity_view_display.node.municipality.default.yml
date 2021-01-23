@@ -1,0 +1,28 @@
+uuid: 99323519-9564-4e74-95f9-cf1a313b0e73
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.municipality.field_county
+    - node.type.municipality
+  module:
+    - user
+id: node.municipality.default
+targetEntityType: node
+bundle: municipality
+mode: default
+content:
+  field_county:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

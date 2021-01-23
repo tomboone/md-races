@@ -1,0 +1,19 @@
+uuid: 853aea3d-834c-413a-94b2-094df0eeda62
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.state
+  module:
+    - user
+id: node.state.default
+targetEntityType: node
+bundle: state
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

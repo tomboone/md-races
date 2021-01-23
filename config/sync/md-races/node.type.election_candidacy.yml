@@ -1,0 +1,17 @@
+uuid: c36acca5-692a-40cb-9f74-e8745ab313c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Election Candidacy'
+type: election_candidacy
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

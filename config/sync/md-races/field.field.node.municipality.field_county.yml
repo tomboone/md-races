@@ -1,0 +1,29 @@
+uuid: f63fa504-3475-476b-8b65-3635bf10ecfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_county
+    - node.type.county
+    - node.type.municipality
+id: node.municipality.field_county
+field_name: field_county
+entity_type: node
+bundle: municipality
+label: County
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      county: county
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

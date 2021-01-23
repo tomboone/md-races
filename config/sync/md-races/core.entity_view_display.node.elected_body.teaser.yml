@@ -1,0 +1,22 @@
+uuid: 01cfcd82-bacd-45d7-b916-58b2fac7a075
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.elected_body.field_level
+    - node.type.elected_body
+  module:
+    - user
+id: node.elected_body.teaser
+targetEntityType: node
+bundle: elected_body
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_level: true

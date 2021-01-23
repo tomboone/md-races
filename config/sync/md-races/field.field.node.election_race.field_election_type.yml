@@ -1,0 +1,21 @@
+uuid: fc98a772-7a64-4b44-ab4b-3402a8167d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_election_type
+    - node.type.election_race
+  module:
+    - options
+id: node.election_race.field_election_type
+field_name: field_election_type
+entity_type: node
+bundle: election_race
+label: 'Election Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

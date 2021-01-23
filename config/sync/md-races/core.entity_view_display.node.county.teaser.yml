@@ -1,0 +1,22 @@
+uuid: 3e28ee37-1976-4c3c-b433-b33dd2e87a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.county.field_state
+    - node.type.county
+  module:
+    - user
+id: node.county.teaser
+targetEntityType: node
+bundle: county
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_state: true

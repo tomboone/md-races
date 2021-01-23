@@ -1,0 +1,28 @@
+uuid: 61539a17-e82b-4c62-81f0-6353df5894da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.county.field_state
+    - node.type.county
+  module:
+    - user
+id: node.county.default
+targetEntityType: node
+bundle: county
+mode: default
+content:
+  field_state:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

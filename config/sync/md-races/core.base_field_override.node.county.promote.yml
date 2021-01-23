@@ -1,0 +1,22 @@
+uuid: 774a8adb-d8c1-4597-8e81-932de757a31b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.county
+id: node.county.promote
+field_name: promote
+entity_type: node
+bundle: county
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

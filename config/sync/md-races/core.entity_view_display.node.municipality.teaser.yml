@@ -1,0 +1,22 @@
+uuid: 2053558b-6eaa-47fe-bdd1-28b7953a2008
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.municipality.field_county
+    - node.type.municipality
+  module:
+    - user
+id: node.municipality.teaser
+targetEntityType: node
+bundle: municipality
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_county: true

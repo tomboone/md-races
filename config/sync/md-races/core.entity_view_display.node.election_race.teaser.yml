@@ -1,0 +1,26 @@
+uuid: 9adaa48d-dd8b-4226-a652-978de40081ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.election_race.field_elected_office
+    - field.field.node.election_race.field_election_date
+    - field.field.node.election_race.field_election_type
+    - node.type.election_race
+  module:
+    - user
+id: node.election_race.teaser
+targetEntityType: node
+bundle: election_race
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_elected_office: true
+  field_election_date: true
+  field_election_type: true
